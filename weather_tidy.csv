@@ -1,0 +1,24 @@
+Variable,Definition
+Date,Date of the observations
+Location,Location of the weather station
+MinTemp,Minimum temperature that day (°C)
+MaxTemp,Maximum temperature that day (°C)
+Rainfall,Rainfall that day in (mm)
+Evaporation,Evaporation in 24hrs (mm)
+Sunshine,Hours of sunshine
+WindGustDir,Direction of wind gusts
+WindGustSpeed,Wind gust speed (Km/h)
+WindDir9am,Direction of wind at 0900hrs
+WindDir3pm,Direction of wind at 1500hrs
+WindSpeed9am,Wind speed at 0900hrs (Km/h)
+WindSpeed3pm,Wind speed at 1500hrs (Km/h)
+Humidity9am,Humiditiy at 0900hrs (%)
+Humidity3pm,Humidity at 1500hrs (%)
+Pressure9am,Pressure at 0900hrs (Hpa)
+Pressure3pm,Pressure at 1500hrs (Hpa)
+Cloud9am,Fraction of sky obscured at 0900hrs (Oktas)
+Cloud3pm,Fraction of sky obscured at 1500hrs (Oktas)
+Temp9am,Temperature at 0900hrs (°C)
+Temp3pm,Temperature at 1500hrs (°C)
+RainToday,Factor of yes and no for if it rained that day
+RainTomorrow,Factor of yes and no for if it rained the next day day
