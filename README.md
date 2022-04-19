@@ -101,12 +101,22 @@ This model was run using the CUDA framework in order to compare time to completi
 The same steps were performed as with the logistic regression model but using a different algorithm. 
 
 # Results
+
+| Model                           | Time to completion (seconds) | Accuracy (%) |
+|---------------------------------|------------------------------|--------------|
+| CUML Logistic Regression Test   | 5                            | 78           |
+| CUML-k Nearest Neighbor Train   | 0.2                          | 86           |
+| CUML-k Nearest Neighbor Test    | 0.1                          | 84           |
+| CUML-k Nearest Neighbor k-score | 6.1                          | 85           |
+| k Nearest Neighbor Train        | 196                          | 90           |
+| k Nearest Neighbor Test         | 148                          | 82           |
+| k Nearest Neighbor k-score      | 6143                         | 85           |
+
 ## KNN
-Figure 3 shows that the standard runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds.
-![]()
 
-Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.
+The runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds. All accuracies and runtimes have been documented in Table 3 and were correct when running them on the authors computer.
 
+Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.   
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/KNN.PNG)
 
 ## CUDA logistic regression
