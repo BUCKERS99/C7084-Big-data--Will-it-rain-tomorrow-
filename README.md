@@ -71,7 +71,11 @@ The data frame was loaded into the environment using Pandas directly from Kaggle
 
 Figure 1 shows that the data set used is unbalanced which had to be taken into account when running certain models. Plots were created for the rest of the variables individually to visually assess normality. The categorical variables were not checked for normality as it is known that it will not have a normal distribution due to there not being a fixed or known “score”, or any order in the categories (Research Gate, 2021).  The numerical variables were checked for normality using the Shapiro-Wilk test (Shapiro and Wilk, 1965) after the graphical inspection. This was completed in R Studio for ease of data manipulation and tabular output in the creation of this document through markdown.
 
-A correlation heat map was used to check for collinearity and variables were removed from modelling if they had a defined value of more than 0.7, this was defined using the 2012 study conducted by Dormann et al.
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/UnBalanced.PNG)
+
+Figure 2 shows the correlation heat map that was used to check for collinearity. Variables were removed from modelling if they had a defined value of more than 0.7; this was defined using the 2012 study conducted by Dormann et al.
+
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/Corr_heat.PNG)
 
 For all the models run the data was subset into three data frames following an 80:10:10 split: train (80), test (10) and validation (10). 
 
@@ -98,19 +102,21 @@ The same steps were performed as with the logistic regression model but using a 
 
 # Results
 ## KNN
-Figure 1 shows that the standard runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds.
-![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
+Figure 3 shows that the standard runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds.
+![]()
 
-Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 2 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.  
-![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
+Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.
+
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/KNN.PNG)
 
 ## CUDA logistic regression
-Figure 3 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
-![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
+Figure 5 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
+![]()
 
 ## CUDA KNN
-When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure 4 below shows the outcome for the best value for k; it was found that 30 was the best value for k.
-![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
+When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure 6 below shows the outcome for the best value for k; it was found that 30 was the best value for k.
+
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/CUDA_KNN.PNG)
 
 
 
