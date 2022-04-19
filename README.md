@@ -33,7 +33,7 @@ The following objectives were set:
 
 
 # Methods
-The data set was found on Kaggle; variables and their description can be found below in Table 1:
+The data set was found on Kaggle; variables and their description can be found below in Table 2:
 
 | Variable      | Class  | Definition                                               |
 |---------------|--------|----------------------------------------------------------|
@@ -98,15 +98,19 @@ The same steps were performed as with the logistic regression model but using a 
 
 # Results
 ## KNN
-Figure ? shows that the standard runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds.
+Figure 1 shows that the standard runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds.
+![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
 
-Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in figure? this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.   
+Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 2 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.  
+![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
 
 ## CUDA logistic regression
-Figure ? shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
+Figure 3 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
+![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
 
 ## CUDA KNN
-When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure ? below shows the outcome for the best value for k; it was found that 30 was the best value for k.
+When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure 4 below shows the outcome for the best value for k; it was found that 30 was the best value for k.
+![](https://github.com/BUCKERS99/C7083-Data-Visualisation/blob/main/Images/good_viz.PNG?raw=true)
 
 
 
