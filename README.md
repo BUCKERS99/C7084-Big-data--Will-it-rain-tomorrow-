@@ -2,7 +2,25 @@
 The repository for the C7084 Big Data assignment
 
 # Background
-Australia has a landmass of over 7.7 million square kilometres and contains all ecosystem biomes except arctic tundra; the most abundant Koppen-Geiger classification of land seen in Australia is Humid subtropical climate (Cfa) (climate-data, undated) , more information can be seen in Figure 1. According to Crosbie et al., (2012) it is predicted that the future climate of Australia will change with arid climate increasing from 76.5% to 81.7% along with temperate climates decreasing over 5%. This makes relying on rainfall a limiting factor for commercial agriculture within the country. 
+Australia has a landmass of over 7.7 million square kilometres and contains all ecosystem biomes except arctic tundra; the most abundant Koppen-Geiger classification of land seen in Australia is Humid subtropical climate (Cfa) (climate-data, undated) , more information can be seen in Table 1. According to Crosbie et al., (2012) it is predicted that the future climate of Australia will change with arid climate increasing from 76.5% to 81.7% along with temperate climates decreasing over 5%. This makes relying on rainfall a limiting factor for commercial agriculture within the country. 
+
+| Classification         | Count| Köppen-Geiger | Examples                        |
+|-----------------------------------|-----|-----|---------------------------------------------------------------------------|
+| Humid subtropical climate         | 974 | Cfa | Sydney, Brisbane, Newcastle, Wollongong, Ipswich                          |
+| Oceanic climate                   | 855 | Cfb | Melbourne, Canberra, Hobart, Geelong, Launceston                          |
+| Cold semi-arid climates           | 261 | BSk | Mildura, Kerang, Hay, Kimba, Whyalla                                      |
+| Warm-summer Mediterranean climate | 257 | Csb | Albany, Warrnambool, Busselton, Victor Harbor, Port Fairy                 |
+| Hot semi-arid climates            | 180 | BSh | Alice Springs, Mount Isa, Broome, Charters Towers, Carnarvon              |
+| Hot-summer Mediterranean climate  | 153 | Csa | Perth, Adelaide, Mandurah, Bunbury, Geraldton                             |
+| Hot desert climates               | 117 | BWh | Port Hedland, Roxby Downs, Exmouth, Port Augusta, Coober Pedy             |
+| Tropical savanna climate          | 75  | Aw  | Townsville, Darwin, Jabiru, Karumba, Nhulunbuy                            |
+| Tropical monsoon climate          | 22  | Am  | Cairns, Ingham, Lucinda, Cardwell, Gordonvale                             |
+| Tropical rainforest climate       | 16  | Af  | Babinda, South Mission Beach, Wongaling Beach, West Island, Mission Beach |
+| Warm humid continental climate    | 4   | Dfb | Mt Buller Village, Hotham Heights, Dinner Plain, Falls Creek              |
+| Cold desert climates              | 3   | BWk | Rawlinna, Forrest, Cook                                                   |
+| Subarctic climate                 | 1   | Dfc | Perisher Valley                                                           |
+| Tundra climate                    | 1   | ET  | ANARE Station, Macquarie Island                                           |
+| Subpolar oceanic climate          | 1   | Cfc | Miena                                                                     |
 
 Average rainfall has been seen to fluctuate for the country, but within certain remote and rural areas it is far below average. The rainfall within Australia relies heavily on El Nino-Southern Oscillation (ENSO), which can be in one of three phases: Neutral, El Nino, and La Nina. These phases are defined by the temperature of the sea surface in the central and eastern areas of the Pacific Ocean (Climate, 2014). With the fluctuations and unpredictability of weather events during these phases the prediction of rain within Australia is a complex with long range weather forecasting often being incorrect.
 
