@@ -116,7 +116,8 @@ The same steps were performed as with the logistic regression model but using a 
 
 The runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds. All accuracies and runtimes have been documented in Table 3 and were correct when running them on the authors computer.
 
-Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework.   
+Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework. 
+
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/KNN.PNG)
 
 ## CUDA logistic regression
@@ -128,7 +129,7 @@ When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, 
 
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/CUDA_KNN.PNG)
 
-
+# Discussion
 
 
 
