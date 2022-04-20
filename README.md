@@ -121,7 +121,7 @@ Further analysis into the best value for k was completed even though the objecti
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/KNN.PNG)
 
 ## CUDA logistic regression
-Figure 5 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
+Table 3 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
 ![]()
 
 ## CUDA KNN
