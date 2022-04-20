@@ -116,22 +116,22 @@ The same steps were performed as with the logistic regression model but using a 
 
 The runtime kNN model completed in a time of 195.8 seconds producing an accuracy of 90% on the training data set. On the test data set it was seen to produce an accuracy of 83% and a time to completion of 23.6 seconds. All accuracies and runtimes have been documented in Table 3 and were correct when running them on the authors computer.
 
-Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 4 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework. 
+Further analysis into the best value for k was completed even though the objective of 70% accuracy was reached. The best value for k was seen to be 25 as shown in Figure 3 this was completed in a time of 6143 seconds. This was seen as a good value to benchmark against when running the same process through the CUDA framework. 
 
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/KNN.PNG)
 
 ## CUDA logistic regression
 Table 3 shows that using the GPU accelerated session recorded a time to completion of 1.8 seconds with a test accuracy of 78%. While this was a lower accuracy than seen with the kNN model it was deemed unnecessary to further tune the model to produce a higher accuracy; this allowed for the focussing on a direct comparison with a GPU accelerated kNN model. 
-![]()
+
 
 ## CUDA KNN
-When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure 6 below shows the outcome for the best value for k; it was found that 30 was the best value for k.
+When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, correctly predicting 9507/11284 outcomes. The more important finding when running this test was the time to completion. It was seen that the model predicted with 86% accuracy in 0.28 seconds, while the time taken to complete the best value for k validation took 6.1 seconds to complete. Figure 4 below shows the outcome for the best value for k; it was found that 30 was the best value for k.
 
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/CUDA_KNN.PNG)
 
 # Discussion
 
-It has been shown in a number of studies that the use of a GPU will decrease the time taken to train models (Jhurani and Mullowney, 2015; Nishino et al., 2017). When completing a direct comparison, the time to completion for the validation steps of find the best value for k was seen to benefit most from the use of a GPU with the difference in time taken being 102 minutes. A good illustration to the industries view of using GPU’s for classification and big data problems is shown in Figure 7.
+It has been shown in a number of studies that the use of a GPU will decrease the time taken to train models (Jhurani and Mullowney, 2015; Nishino et al., 2017). When completing a direct comparison, the time to completion for the validation steps of find the best value for k was seen to benefit most from the use of a GPU with the difference in time taken being 102 minutes. A good illustration to the industries view of using GPU’s for classification and big data problems is shown in Figure 5.
 
 ![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/GPU_diag.png)
 
