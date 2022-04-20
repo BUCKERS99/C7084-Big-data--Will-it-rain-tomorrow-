@@ -141,7 +141,7 @@ The need for encoding categoric variables is imperative to the successful runnin
 With the analysis reaching an accuracy of over 80% it shows that there is scope to implement a method of early warning to people in regional and rural areas that could be more accurate than a standard weather prediction. This could prevent isolation events that has large detrimental affect on human populations and, for farmers, create the ability to move stock before a large rain event. This could reduce the number of stranded cattle and deaths attributed to severe rain and flooding.
 
 
-
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Rain_Tomorrow.gif)
 
 # References
 
