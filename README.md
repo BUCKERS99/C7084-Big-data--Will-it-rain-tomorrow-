@@ -140,33 +140,41 @@ The need for encoding categoric variables is imperative to the successful runnin
 
 With the analysis reaching an accuracy of over 80% it shows that there is scope to implement a method of early warning to people in regional and rural areas that could be more accurate than a standard weather prediction. This could prevent isolation events that has large detrimental affect on human populations and, for farmers, create the ability to move stock before a large rain event. This could reduce the number of stranded cattle and deaths attributed to severe rain and flooding.
 
+The creation of the animated map to document if it will rain tomorrow was difficult to produce. It was decided that it should be made in R Studio as the author had more confidence in completing the task. Most map making packages in R do not have a default outline for Australia, this problem was overcome using the ozmaps package (mdsumner, 2021) which supplied the correct geometry data needed to create an outline and state boundaries. The date function had to be correctly used and defined to recognise the correct date. If this was changed without defining the place holders it caused errors. The choice to use a slower transition speed throughout the animation was in order to allow the viewer time to view the output. A faster animation time moved through the frames too quickly and no meaning was able to be gathered from the plot. If this was to be created again a shiny app (Shiny, 2022) would allow the user to select dates of interest and possible compare data from other dates. 
 
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Rain_Tomorrow.gif)
+
+Figure 6 shows the animated map of results.
 
 
 # References
+
+Amazon. 2022. Learn and experiment with machine learning. [Online]. Available from: https://studiolab.sagemaker.aws/ [Accessed on 15/04/2022].
+
+Climate. 2014. What is the ElNino-Southern Oscillation (ENSO) in a nutshell? [Online]. Available from: https://www.climate.gov/news-features/blogs/enso/what-el-ni%C3%B1o%E2%80%93southern-oscillation-enso-nutshell [Accessed on 15/04/2022].
 
 Climate-data. Undated. Climate-Australia. [Online]. Available from: https://en.climate-data.org/oceania/australia-140/ [Accessed on 15/04/2022].
 
 Crosbie, R.S., Pollock, D.W., Mpelasoka, F.S., Barron, O.V., Charles, S.P. and Donn, M.J., 2012. Changes in Köppen-Geiger climate types under a future climate for Australia: hydrological implications. Hydrology and Earth System Sciences, 16(9), pp.3341-3349.
 
-Climate. 2014. What is the ElNino-Southern Oscillation (ENSO) in a nutshell? [Online]. Available from: https://www.climate.gov/news-features/blogs/enso/what-el-ni%C3%B1o%E2%80%93southern-oscillation-enso-nutshell [Accessed on 15/04/2022].
-
-Amazon. 2022. Learn and experiment with machine learning. [Online]. Available from: https://studiolab.sagemaker.aws/ [Accessed on 15/04/2022].
-
-NVIDIA. 2019 NVIDIA T4 Tensor Core GPU. [Online]. Available from: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf [Accessed on 15/04/2022].
-
-Jia, Z., Maggioni, M., Smith, J. and Scarpazza, D.P., 2019. Dissecting the NVidia Turing T4 GPU via microbenchmarking. arXiv preprint arXiv:1903.07486.
-
-Shapiro, S.S. and Wilk, M.B., 1965. An analysis of variance test for normality (complete samples). Biometrika, 52(3/4), pp.591-611.
-
 Dormann, C.F., Elith, J., Bacher, S., Buchmann, C., Carl, G., Carré, G., Marquéz, J.R.G., Gruber, B., Lafourcade, B., Leitão, P.J. and Münkemüller, T., 2013. Collinearity: a review of methods to deal with it and a simulation study evaluating their performance. Ecography, 36(1), pp.27-46.
-
-Research Gate. 2021. Normality test for categoric variables. [Online]. Available from:  https://www.researchgate.net/post/Normality_test_for_categorical_variables [Accessed on 15/04/2022].
-
-Valizadeh, S., Moshiri, B. and Salahshoor, K., 2009. Leak detection in transportation pipelines using feature extraction and KNN classification. In Pipelines 2009: Infrastructure's Hidden Assets (pp. 580-589).
-
-Seger, C., 2018. An investigation of categorical variable encoding techniques in machine learning: binary versus one-hot and feature hashing.
 
 Jhurani, C. and Mullowney, P., 2015. A GEMM interface and implementation on NVIDIA GPUs for multiple small matrices. Journal of Parallel and Distributed Computing, 75, pp.133-140.
 
+Jia, Z., Maggioni, M., Smith, J. and Scarpazza, D.P., 2019. Dissecting the NVidia Turing T4 GPU via microbenchmarking. arXiv preprint arXiv:1903.07486.
+
+Mdsumner. 2021. Ozmaps. [Online]. Available from: https://github.com/mdsumner/ozmaps [Accessed on 20/04/2022].
+
 Nishino, R.O.Y.U.D. and Loomis, S.H.C., 2017. Cupy: A numpy-compatible library for nvidia gpu calculations. 31st confernce on neural information processing systems, 151.
+
+NVIDIA. 2019 NVIDIA T4 Tensor Core GPU. [Online]. Available from: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf [Accessed on 15/04/2022].
+
+Research Gate. 2021. Normality test for categoric variables. [Online]. Available from:  https://www.researchgate.net/post/Normality_test_for_categorical_variables [Accessed on 15/04/2022].
+
+Seger, C., 2018. An investigation of categorical variable encoding techniques in machine learning: binary versus one-hot and feature hashing.
+
+Shapiro, S.S. and Wilk, M.B., 1965. An analysis of variance test for normality (complete samples). Biometrika, 52(3/4), pp.591-611.
+
+Shiny. 2022. Shiny from R Studio. [Online]. Available from: https://shiny.rstudio.com/ [Accessed 20/04/2022].
+
+Valizadeh, S., Moshiri, B. and Salahshoor, K., 2009. Leak detection in transportation pipelines using feature extraction and KNN classification. In Pipelines 2009: Infrastructure's Hidden Assets (pp. 580-589).
