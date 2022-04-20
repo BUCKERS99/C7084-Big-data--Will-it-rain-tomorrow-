@@ -131,23 +131,29 @@ When running the NVIDIA CUDA kNN model it produced an accuracy of 84% accuracy, 
 
 # Discussion
 
+It has been shown in a number of studies that the use of a GPU will decrease the time taken to train models (Jhurani and Mullowney, 2015; Nishino et al., 2017). When completing a direct comparison, the time to completion for the validation steps of find the best value for k was seen to benefit most from the use of a GPU with the difference in time taken being 102 minutes. A good illustration to the industries view of using GPU’s for classification and big data problems is shown in Figure 7.
 
+![](https://github.com/BUCKERS99/C7084-Big-data--Will-it-rain-tomorrow-/blob/main/Plots/GPU_diag.png)
 
+While this figure is a light-hearted view, the increase in speed has serious consequences in the world of analysis and creating meaning from large data sets. 
+The need for encoding categoric variables is imperative to the successful running of machine learning models. This is because statistical understanding inherently uses mathematics, which needs numbers to work. Encoding can be as simple as making a “Yes” response into a 1 and a “No” into a 2 or dates into a string of numbers. There are many type of encoding such as target encoding, which converts a categorical value into the mean of the target variable, however care must be taken to chose the correct encoding for the model, as it can cause overfitting. For the machine learning problems encountered throughout this study the OneHot encoding method was used. OneHot encoding is used for nominal data, where the data does not include any numerical values, and creates binary features for each categoric variable. 
+
+With the analysis reaching an accuracy of over 80% it shows that there is scope to implement a method of early warning to people in regional and rural areas that could be more accurate than a standard weather prediction. This could prevent isolation events that has large detrimental affect on human populations and, for farmers, create the ability to move stock before a large rain event. This could reduce the number of stranded cattle and deaths attributed to severe rain and flooding.
 
 
 
 
 # References
 
-https://en.climate-data.org/oceania/australia-140/
+Climate-data. Undated. Climate-Australia. [Online]. Available from: https://en.climate-data.org/oceania/australia-140/ [Accessed on 15/04/2022].
 
 Crosbie, R.S., Pollock, D.W., Mpelasoka, F.S., Barron, O.V., Charles, S.P. and Donn, M.J., 2012. Changes in Köppen-Geiger climate types under a future climate for Australia: hydrological implications. Hydrology and Earth System Sciences, 16(9), pp.3341-3349.
 
-https://www.climate.gov/news-features/blogs/enso/what-el-ni%C3%B1o%E2%80%93southern-oscillation-enso-nutshell
+Climate. 2014. What is the ElNino-Southern Oscillation (ENSO) in a nutshell? [Online]. Available from: https://www.climate.gov/news-features/blogs/enso/what-el-ni%C3%B1o%E2%80%93southern-oscillation-enso-nutshell [Accessed on 15/04/2022].
 
-Amazon. 2022. https://studiolab.sagemaker.aws/
+Amazon. 2022. Learn and experiment with machine learning. [Online]. Available from: https://studiolab.sagemaker.aws/ [Accessed on 15/04/2022].
 
-NVIDIA. 2019 https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf
+NVIDIA. 2019 NVIDIA T4 Tensor Core GPU. [Online]. Available from: https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/tesla-t4/t4-tensor-core-datasheet-951643.pdf [Accessed on 15/04/2022].
 
 Jia, Z., Maggioni, M., Smith, J. and Scarpazza, D.P., 2019. Dissecting the NVidia Turing T4 GPU via microbenchmarking. arXiv preprint arXiv:1903.07486.
 
@@ -155,7 +161,7 @@ Shapiro, S.S. and Wilk, M.B., 1965. An analysis of variance test for normality (
 
 Dormann, C.F., Elith, J., Bacher, S., Buchmann, C., Carl, G., Carré, G., Marquéz, J.R.G., Gruber, B., Lafourcade, B., Leitão, P.J. and Münkemüller, T., 2013. Collinearity: a review of methods to deal with it and a simulation study evaluating their performance. Ecography, 36(1), pp.27-46.
 
-Research Gate. 2021. https://www.researchgate.net/post/Normality_test_for_categorical_variables
+Research Gate. 2021. Normality test for categoric variables. [Online]. Available from:  https://www.researchgate.net/post/Normality_test_for_categorical_variables [Accessed on 15/04/2022].
 
 Valizadeh, S., Moshiri, B. and Salahshoor, K., 2009. Leak detection in transportation pipelines using feature extraction and KNN classification. In Pipelines 2009: Infrastructure's Hidden Assets (pp. 580-589).
 
